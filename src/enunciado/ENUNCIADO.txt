@@ -1,0 +1,2 @@
+- añadir funcionalidad de exportar en formato json, en la sección de consulta.
+- utilizaremos el paquete gson de java. 
