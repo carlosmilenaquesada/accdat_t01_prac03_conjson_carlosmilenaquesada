@@ -5,11 +5,11 @@ public class Mensajes {
     public static final String[][] MENSAJES = initMensajes();
 
     public static String[][] initMensajes() {
-        String[][] mensajes = new String[1][40];
+        String[][] mensajes = new String[1][41];
         mensajes[0][0] = "No tiene permisos para manipular el fichero."
                 + " Se cerrará el programa.";
 
-        mensajes[0][1] = "Fichero no econtrado o ilegible."
+        mensajes[0][1] = "Fichero no encontrado o ilegible."
                 + " No se pueden los cargar datos.";
 
         mensajes[0][2] = "Fichero ilegible."
@@ -31,12 +31,13 @@ public class Mensajes {
                 + "\nEs posible que los datos no se guarden correctamente";
 
         mensajes[0][37] = "El archivo contiene información corrupta o incompatible con JSON.";
-        
+
         mensajes[0][9] = "El archivo está vacío, no hay nada que leer.";
-        
+
         mensajes[0][36] = "Actualmente no existe fichero de dato o es ilegible."
                 + "\nSe creará uno automáticamente cuando se guarden los cambios.";
-
+        mensajes[0][40] = "Ocurrió un problema y no se pudo exportar el fichero.";
+                
         
         mensajes[0][8] = "Algunos campos contienen"
                 + " información no válida";
@@ -63,21 +64,19 @@ public class Mensajes {
                 + " ¿Desea continuar?";
         mensajes[0][26] = "¿Está seguro?";
 
-        
         mensajes[0][27] = "El alumno: \n";
         mensajes[0][28] = "\nHa sido modificado correctamente";
         mensajes[0][29] = "Ya existe un alumno con el"
                 + " número de matrícula: ";
         mensajes[0][30] = "." + "\nNo se puede crear el alumno. Pruebe otro número de matrícula.";
         mensajes[0][35] = "¿Desea salir del programa? \nSe perderán los cambios que no haya guardado.";
-        
+
         mensajes[0][31] = "Borrado de alumnos";
         mensajes[0][32] = "Deshacer cambios";
         mensajes[0][33] = "Salir del programa";
         mensajes[0][34] = "Salir y guardar";
         mensajes[0][38] = "Debe seleccionar algún registro para exportar el archivo JSON";
         mensajes[0][39] = "Exportación realizada con éxito";
-        
 
         return mensajes;
 

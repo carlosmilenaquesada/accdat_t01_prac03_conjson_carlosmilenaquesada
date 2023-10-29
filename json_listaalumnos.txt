@@ -1,0 +1,1 @@
+[{"nMatricula":444,"nombre":"Paz Martos","not1Ev":4.53,"nota2Ev":2.15,"notaFinal":3.7,"notaExtra":6.2},{"nMatricula":333,"nombre":"Beatriz Vegas","not1Ev":3.3,"nota2Ev":6.5,"notaFinal":9.7,"notaExtra":2.2},{"nMatricula":222,"nombre":"Benito lópez","not1Ev":6.3,"nota2Ev":7.5,"notaFinal":2.1,"notaExtra":4.0}]

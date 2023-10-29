@@ -18,7 +18,6 @@ import java.util.logging.Logger;
 import javax.swing.DefaultListModel;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
-import javax.swing.JTable;
 import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
 import modelo.AlumnoAD;
@@ -836,7 +835,15 @@ public class PrincipalJFrame extends javax.swing.JFrame {
         JFileChooser fc = new JFileChooser();
         fc.setCurrentDirectory(new File("."));
         if (tipo.equals(TipoFileChooser.SAVE)) {
+            
             fc.showSaveDialog(null);
+            if (!fc.getSelectedFile().exists()) {
+                try {
+                    fc.getSelectedFile().createNewFile();
+                } catch (IOException ex) {
+                    JOptionPane.showMessageDialog(null, Mensajes.MENSAJES[0][40]);
+                }
+            }
         } else {
             if (tipo.equals(TipoFileChooser.OPEN)) {
                 fc.showOpenDialog(null);
@@ -1100,7 +1107,7 @@ public class PrincipalJFrame extends javax.swing.JFrame {
         } else {
             try {
                 File file = obtenerFileDeFileChooser(TipoFileChooser.SAVE);
-                if (file != null && file.isFile()) {
+                if (file.isFile()) {
                     fos = new FileOutputStream(file);
 
                     for (char c : json.toCharArray()) {
